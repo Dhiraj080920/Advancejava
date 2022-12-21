@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+
+  <display-name>ProductCrudOperation</display-name>
+    <display-name>PlaceOrder</display-name>
+  <welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+ 
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>AddProduct</servlet-name>
+  <servlet-class>com.demo.servlet.AddProduct</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AddProduct</servlet-name>
+  <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  <servlet>
+     <servlet-name>login</servlet-name>
+     <servlet-class>com.demo.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>login</servlet-name>
+  <url-pattern>/validate</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
